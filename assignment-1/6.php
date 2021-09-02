@@ -6,8 +6,8 @@
 
 class date_to_str
 {
-    public function __construct()
-    {
+    public function __construct(){
+
     }
 }
 
