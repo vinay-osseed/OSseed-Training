@@ -7,7 +7,10 @@
 class date_to_str
 {
     public function __construct(){
-
+        $date1='Second Saturday of December, 2007';
+        $date2='Last Friday of November, 2007';
+        echo "{$date1} :".date("m-d-Y",strtotime(str_replace(',','',$date1)))."\n";
+        echo "{$date2} :".date("m-d-Y",strtotime(str_replace(',','',$date2)))."\n";
     }
 }
 
