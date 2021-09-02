@@ -4,7 +4,7 @@
     ---> Last Friday of November, 2007: 11-30-2007
 */
 
-class date_to_str
+class str_to_date
 {
     public function __construct(){
         $date1='Second Saturday of December, 2007';
@@ -14,4 +14,4 @@ class date_to_str
     }
 }
 
-new date_to_str();  /* instance of date_to_str  */
+new str_to_date();  /* instance of str_to_date  */
