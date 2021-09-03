@@ -55,7 +55,6 @@ margin: auto;
     right: 0;
     left: 0;
     top:13%;
-    /* bottom: 15%; */
     margin: 0;
     padding: 0 6%;
     width: 100%;
@@ -92,15 +91,17 @@ margin: auto;
     font-style: italic;
     font-weight: 400;
 }
-/* .form-input{
-    width: 100%;
-} */
 .progress{
     height: 8px;
     position: relative;
     margin: 0px 10% 10px 10%;
     border-radius: 25px;
     background-color: #DDE5E7;
+}
+input{
+    border: 2px solid #bac7d0;
+    font-size: 12px;
+    padding: 20px 12px;
 }
 
 input[type="password" i] {
@@ -209,7 +210,6 @@ input[type="password" i] {
     bottom: -150%;
     right: 0;
     left: 0;
-    /* top: 90%; */
     background: #eef2f3;
 }
 .r{
@@ -225,7 +225,6 @@ input[type="password" i] {
   float: left;
   width: 16%;
   padding: 5px;
-  /* margin: 0 3%; */
 }
 .fhead{
     text-align: center;
