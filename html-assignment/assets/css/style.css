@@ -204,6 +204,46 @@ input[type="password" i] {
     line-height: 24px;
     margin-bottom: 18px;
 }
+.footer{
+    position: absolute;
+    bottom: -150%;
+    right: 0;
+    left: 0;
+    /* top: 90%; */
+    background: #eef2f3;
+}
+.r{
+    margin-left: 5%;
+}
+.r::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 3%;
+  }
+.c{
+  float: left;
+  width: 16%;
+  padding: 5px;
+  /* margin: 0 3%; */
+}
+.fhead{
+    text-align: center;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #92a5b0;
+    letter-spacing: 0;
+    margin: 20px 0;
+}
+.fbtn{
+    border:2px solid #1a89bb ;
+    background: #e0e3e4;
+    color: #1a89bb;
+    padding: 10px 20px;
+}
 @media only screen and(max-width:1024px) {
 
 }
