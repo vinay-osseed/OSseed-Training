@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+    padding-top: 33px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 87%;
+    width: 100%;
+}
+.nav-logo{
+position: relative;
+left: 44%;
+right: 0;
+top: 0;
+bottom: 0;
+margin: auto;
+}
+
+.top-sec{
+    background-color: #f1f1f1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:13%;
+    bottom: 15%;
+    width: 100%;
+}
+.head-title{
+    font-size: 64px;
+    margin: 0 auto;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 60px;
+    text-align: center;
+}
+.head-subtitle{
+    font-size: 32px;
+    max-width: 55%;
+    margin: 24px auto 0;
+    font-family: Adelle,"Tablet Gothic",Frutiger,"Frutiger Linotype",Univers,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+.head-title ,.head-subtitle,.form-head{
+    color: #313945;
+}
+.row{
+    position: relative;
+    right: 0;
+    left: 0;
+    top:13%;
+    /* bottom: 15%; */
+    margin: 0;
+    padding: 0 10%;
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 50%;
+}
+.item1 { grid-area: 1 / 1 / 2 / 2; }
+.item2 { grid-area: 1 / 2 / 2 / 3; }
+
+.form-card{
+    -webkit-box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+    background-color: white;
+    padding: 30px;
+}
+.form-head{
+    display: block;
+    padding-top: 25px;
+    text-align: center;
+}
+.form-head > .form-title{
+    font-size: 40px;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.form-head > .form-subtitle{
+    font-size: 26px;
+    font-family: Adelle,"Tablet Gothic",Frutiger,"Frutiger Linotype",Univers,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+.form-input{
+    width: 100%;
+}
+.form-input > .form-input > input {
+    width: 100%;
+}
+@media only screen and(max-width:1024px) {
+
+}
+@media only screen and(max-width:768px) {
+
+}
+@media only screen and(max-width:360px) {
+
+}
+@media only screen and(max-width:425px) {
+
+}
