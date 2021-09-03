@@ -57,18 +57,23 @@ margin: auto;
     top:13%;
     /* bottom: 15%; */
     margin: 0;
-    padding: 0 10%;
+    padding: 0 6%;
     width: 100%;
     display: grid;
     grid-auto-columns: 50%;
 }
 .item1 { grid-area: 1 / 1 / 2 / 2; }
 .item2 { grid-area: 1 / 2 / 2 / 3; }
+.item3 {
+  display: grid;
+  grid-auto-columns: 100%;
+    grid-area: 1;
+}
 
 .form-card{
-    -webkit-box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 50px rgb(0 0 0 / 10%);
     background-color: white;
-    padding: 30px;
+    padding: 20px;
 }
 .form-head{
     display: block;
@@ -87,11 +92,117 @@ margin: auto;
     font-style: italic;
     font-weight: 400;
 }
-.form-input{
+/* .form-input{
     width: 100%;
+} */
+.progress{
+    height: 8px;
+    position: relative;
+    margin: 0px 10% 10px 10%;
+    border-radius: 25px;
+    background-color: #DDE5E7;
 }
-.form-input > .form-input > input {
+
+input[type="password" i] {
+   width: 193%;
+}
+.form-input > .row > input {
+    margin:3% ;
+}
+.form-text{
+    margin: 0px 0 10px 8%;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+
+}
+ .form-text > li {
+    list-style: none;
+    width: 30%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #627684;
+    padding: 5px 0;
+}
+.label{
+    margin: 3% 0;
+}
+.signup{
     width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    background-color: #eecf1e;
+    border: 0;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.signup:hover{
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.google{
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.google:hover{
+    background: #4285F4!important;
+    opacity: 0.7;
+}
+.line{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #77797a;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+ }
+.line > span{
+    background:#fff;
+    padding:0 10px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.rs-head{
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    margin-top: 15%;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 34px;
+}
+.list{
+    margin: 0 25%;
+}
+.fa-check{
+    color: #5ecd9f;
+}
+.list > li{
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 18px;
 }
 @media only screen and(max-width:1024px) {
 
