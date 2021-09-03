@@ -9,3 +9,4 @@ class next_week_date{
 }
 
 new next_week_date();  /* instance of next_week_date  */
+?>

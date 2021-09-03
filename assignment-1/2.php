@@ -17,3 +17,4 @@ class replace {
     }
 }
 new replace(",","*","This,is,training",2);  /*4rth parameter $method is Options (default=1) */
+?>

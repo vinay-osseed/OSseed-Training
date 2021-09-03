@@ -23,3 +23,4 @@ class chess extends games{
 
 $chess = new chess("indoor");  /* instance of chess class */
 $chess->getType();
+?>

@@ -40,3 +40,4 @@ $example->am(); /* Example Of array_merge function */
 $example->imp(); /* Example Of implode function */
 $example->exp(); /* Example Of explode function */
 $example->str_fun(); /* Example Of String function */
+?>

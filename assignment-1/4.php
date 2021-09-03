@@ -18,3 +18,4 @@ class key_check{
 $new=array('one'=>1,'two'=>2,'three'=>3,'four'=>4);
 new key_check($new,"four");  /* pass array and key that you want to check as parameter */
 new key_check($new,"five");
+?>

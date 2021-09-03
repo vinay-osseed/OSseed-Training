@@ -26,3 +26,4 @@ class year
 
 $year = new year();
 $year->nxt_leap_yr();  /* instance of year  */
+?>

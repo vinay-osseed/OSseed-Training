@@ -15,3 +15,4 @@ class str_to_date
 }
 
 new str_to_date();  /* instance of str_to_date  */
+?>

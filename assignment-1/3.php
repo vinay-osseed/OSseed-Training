@@ -21,3 +21,4 @@ class compare{
 }
 new compare("Vinay Gawade","vinay gawade");  /* 3rd parameter $case is Options (Default=false) */
 new compare("Vinay Gawade","Vinay Gawade",true);
+?>
