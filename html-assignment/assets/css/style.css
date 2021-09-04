@@ -580,41 +580,20 @@
 @media screen and (max-width:1024px) {
 
     .footer {
-        position: absolute;
-        bottom: -90%;
-        right: 0;
-        left: 0;
-        background: #eef2f3;
+        bottom: -125%;
     }
 
     .row {
-        position: relative;
-        right: 0;
-        left: 0;
-        top: 13%;
         margin: 0;
         padding: 0 0;
-        width: 100%;
-        display: grid;
-        grid-auto-columns: 50%;
     }
 
     .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
         width: 65%;
     }
 
     .navbar {
-        background-color: black;
         padding-top: 45px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 87%;
-        width: 100%;
     }
 
     .form-card {
@@ -627,7 +606,7 @@
     }
 
     .list>li {
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 18px;
     }
 
