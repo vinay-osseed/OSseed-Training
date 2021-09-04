@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+
+@media screen and (max-width:2560px) {
+
 .navbar{
     background-color: black;
     padding-top: 33px;
@@ -243,16 +246,82 @@ input[type="password" i] {
     color: #1a89bb;
     padding: 10px 20px;
 }
+}
 
-@media only screen and(max-width:1024px) {
+@media screen and (max-width:1024px) {
+
+    .footer{
+        position: absolute;
+        bottom: -90%;
+        right: 0;
+        left: 0;
+        background: #eef2f3;
+    }
+
+.row{
+    position: relative;
+    right: 0;
+    left: 0;
+    top:13%;
+    margin: 0;
+    padding: 0 0;
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 50%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+  }
+
+.navbar{
+    background-color: black;
+    padding-top: 45px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 87%;
+    width: 100%;
+}
+
+.form-card{
+    padding: 15px;
+    margin-right: 5%;
+}
+.form-text{
+    margin: 0px 0 10px 1%;
+}
+.list > li {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+.fhead{
+    font-size: 18px;
+}
+.list{
+    margin: 0 20%;
+}
+.progress {
+    margin: 0px 1% 10px 2%;
+}
+
+.c{
+    display: block;
+    margin-left: 0;
+    margin-right: 3%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width:768px) {
 
 }
-@media only screen and(max-width:768px) {
+@media screen and (max-width:360px) {
 
 }
-@media only screen and(max-width:360px) {
-
-}
-@media only screen and(max-width:425px) {
+@media screen and (max-width:425px) {
 
 }
