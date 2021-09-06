@@ -52,7 +52,7 @@
 /* SECTION CSS */
 .container {
     position: relative;
-    width: 1170px;
+    /* width: 1170px; */
     padding: 0 15px;
     margin: -80px auto 150px auto;
 }
@@ -72,6 +72,13 @@
 .rsc {
     float: left;
     width: 50%;
+}
+
+@media screen and(min-width:1024px) {
+.p{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(768px, 1fr));
+}
 }
 
 .rsc,
