@@ -56,7 +56,7 @@
   position: relative;
   width: 1170px;
   padding: 0 15px;
-  margin: -80px auto 0 auto;
+  margin: -80px auto 150px auto;
 }
 
 .row {
@@ -203,7 +203,7 @@ input[type="password"i] {
 .label > li {
     list-style: none;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     color: #627684;
     padding: 5px 0;
@@ -275,7 +275,7 @@ input[type=checkbox]:hover {
     font-size: 18px;
     padding: 16px;
     background-color: #fff;
-    border: 2px solid #000;
+    border: 3px solid #000;
     font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -305,6 +305,55 @@ input[type=checkbox]:hover {
 
 /* END RIGHT SIDE CSS */
 
+/* FOOTER CSS */
+.footer{
+    background-color: #eef2f3;
+    padding: 0 40px ;
+}
+.footer > .r{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:20px 0 0 0;
+    padding:0 40px 40px;
+}
+.footer > .r > .c{
+    margin: 0 30px;
+    padding: 10px 0;
+    opacity: .7;
+}
+.fhead {
+    text-align: center;
+    font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #92a5b0;
+    letter-spacing: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.fbtn {
+    border: 2px solid #1a89bb;
+    background: #e0e3e4;
+    color: #1a89bb;
+    padding: 10px 20px;
+}
+.fbtn:hover {
+    background: #1a89bb;
+    color: #fff;
+    border-color: #fff;
+}
+.fbtn,.fbtn:hover{
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/* END FOOTER CSS */
+
 /* HTML TAGES CSS */
 form {
     margin: 20px 0;
@@ -315,16 +364,6 @@ img {
     vertical-align: middle;
 }
 
-/*
-input {
-    border: 2px solid #bac7d0;
-    font-size: 0.75rem;
-    padding: 1.25rem 0.75rem;
-}
-
-input[type="password"i] {
-    width: 193%;
-} */
 /* END HTML TAGES CSS */
 
 /*
