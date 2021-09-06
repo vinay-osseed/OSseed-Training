@@ -17,11 +17,11 @@
     <nav class="navbar">
         <a class="nav-logo" href="home"><img src="./assets/img/logo-pantheon--logotype.svg" alt="logo-pantheon" /></a>
     </nav>
-        <h1 class="head-title">Create Your Free Account</h1>
-        <h2 class="head-subtitle">
-            Join over 150,000 developers using Pantheon to create amazing digital
-            experiences.
-        </h2>
+    <h1 class="head-title">Create Your Free Account</h1>
+    <h2 class="head-subtitle">
+        Join over 150,000 developers using Pantheon to create amazing digital
+        experiences.
+    </h2>
 
 </header>
 <section class="container">
@@ -36,13 +36,86 @@
                 <li><i class="fa-li fa fa-check"></i>Integrated Content Delivery Network (CDN)</li>
             </ul>
         </div>
-        <div class="rsc">
-            <img class="rsimg" src="./assets/img/rsimg.png" alt="left-side-image">
 
+        <div class="rsc">
+            <div class="form-card">
+                <h1 class="form-head">
+                    <span class="form-title">Sign-Up Now!</span>
+                    <br>
+                    <span class="form-subtitle">Pay for a plan when your site goes live.</span>
+                </h1>
+
+                <form>
+                    <!-- <div class="form-input"> -->
+                    <div class="row">
+                        <div class="input">
+                            <input class="lsc" name="firstname" type="text" placeholder="First Name*">
+                        </div>
+                        <div class="input">
+                            <input class="rsc" name="lastname" type="text" placeholder="Last Name*">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
+                            <input class="lsc" name="company" type="text" placeholder="Company Name*">
+                        </div>
+                        <div class="input">
+                            <input class="rsc" name="email" type="email" placeholder="Work Email*">
+                        </div>
+                        <input name="password" type="password" autocomplete="new-password"
+                            placeholder="Enter Your Password*" aria-autocomplete="list">
+                    </div>
+
+                    <div class="password">
+                        <div class="label">Password Strength: </div>
+                        <br><br>
+                        <div class="progress"></div>
+                        <ul class="label fa-ul">
+                            <li><i class="fas fa-check-circle"></i> Min. 8 Characters</li>
+                            <li><i class="fas fa-check-circle"></i> Special Character</li>
+                            <li><i class="fas fa-check-circle"></i> 16 Characters and more</li>
+                            <li><i class="fas fa-check-circle"></i> Number</li>
+                            <li><i class="fas fa-check-circle"></i> Upper Case</li>
+                            <li><i class="fas fa-check-circle"></i> Lower Case</li>
+                        </ul>
+                    </div>
+<br>
+<br>
+<br>
+<br>
+                    <div class="check">
+
+                        <div>
+                            <input name="agency" type="checkbox" value="agency">
+                            <strong>Are you an agency?</strong> <small>(additional WebOps tools for
+                                agency developers)</small>
+                        </div>
+                        <div>
+                            <input name="edu"  type="checkbox">
+                            <strong>Are you an EDU? </strong><small>(additional features to manage your
+                                school's sites)</small>
+                        </div>
+                        <div>
+                            <input name="tos" value="tos" type="checkbox">
+                            <label for="tos"
+                                style="margin-top:0; font-weight: 300;margin-bottom: 20px;">I agree to
+                                Pantheon's <a href="terms" target="_blank"
+                                    style="color: #219fcf; font-weight:700; text-decoration:none;">Terms of
+                                    Use</a>.</label>
+                        </div>
+                    </div>
+
+                            <button class="signup" type="submit">Sign Up</button>
+                            <p class="line"><span>Or</span></p>
+                            <button class="google"><i class="fab fa-google"></i>&nbsp; Connect with Google</button>
+
+                </form>
+            </div>
         </div>
     </div>
 </section>
-    <!-- <div class="row">
+
+<!-- <div class="row">
         <div class="item1">
             <div class="center">
                 <img class="rsimg" src="./assets/img/rsimg.png" alt="left-side-image">
@@ -135,9 +208,7 @@
 
 
         </div>
-    </div> -->
-<!-- </div> -->
-<!-- </div> -->
+    </div>
 
 <footer class="footer">
     <div class="fhead">You’re in good company</div>
@@ -161,6 +232,6 @@
             <button class="fbtn">More</button>
         </div>
     </div>
-</footer>
+</footer>-->
 
 </html>

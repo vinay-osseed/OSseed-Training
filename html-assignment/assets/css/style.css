@@ -1,9 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* @media screen and (max-width:1366px) ,screen and (max-height:768px) { */
 
@@ -11,116 +10,322 @@
 /* HEADER CSS */
 
 .header {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding-bottom: 180px;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-bottom: 180px;
 }
 
 .navbar {
-    background-color: black;
-    padding-top: 32px;
-    height: 80px;
+  background-color: black;
+  padding-top: 32px;
+  height: 80px;
 }
 
 .head-title {
-    font-size: 64px;
-    margin: 0 auto;
-    font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    padding-top: 64px;
+  font-size: 64px;
+  margin: 0 auto;
+  font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers,
+    HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 64px;
 }
 
 .head-subtitle {
-    font-size: 32px;
-    max-width: 700px;
-    margin: 24px auto 0;
-    letter-spacing: -.3px;
-    font-family: Adelle, "Tablet Gothic", Frutiger, "Frutiger Linotype", Univers, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+  font-size: 32px;
+  max-width: 700px;
+  margin: 24px auto 0;
+  letter-spacing: -0.3px;
+  font-family: Adelle, "Tablet Gothic", Frutiger, "Frutiger Linotype", Univers,
+    HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+    Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .head-title,
-.head-subtitle,
-.form-head {
-    color: #313945;
+.head-subtitle {
+  color: #313945;
 }
 
-/* HEADER CSS */
-.container {
-    position: relative;
-    width: 1170px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: -80px;
-}
+/* END HEADER CSS */
 
 /* SECTION CSS */
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.container {
+  position: relative;
+  width: 1170px;
+  padding: 0 15px;
+  margin: -80px auto 0 auto;
+}
 
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .lsc {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
+  padding: 0 15px;
 }
 
 .rsc {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .rsc,
 .lsc {
-    text-align: center;
+  text-align: center;
 }
 
-/* SECTION CSS */
+/* END SECTION CSS */
 
 /* LEFT SIDE CSS */
 
 .ls-head {
-    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: 0;
-    line-height: 30px;
-    margin-bottom: 20px;
-    color: #000;
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 20px;
+  font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers,
+    HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
 }
-.lsimg{
-    margin-bottom: 100px;
+.lsimg {
+  margin-bottom: 100px;
 }
 .list {
-    margin: 0 10% 0 25%;
-    text-align: start;
+  margin: 0 10% 0 25%;
+  text-align: start;
 }
 
 .fa-check {
-    color: #5ecd9f;
+  color: #5ecd9f;
 }
-.list>li {
-    font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+.list > li {
+  font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers,
+    HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+/* END LEFT SIDE CSS */
+
+/* RIGHT SIDE CSS */
+.form-card {
+  box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+  background-color: white;
+  padding: 15px;
+  margin: 0 30px;
+}
+.form-head {
+  display: block;
+  padding-top: 25px;
+  text-align: center;
+  color: black;
+}
+
+.form-head > .form-title {
+  font-size: 2.5rem;
+  font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers,
+    HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial,
+    Lucida Grande, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.form-head > .form-subtitle {
+  font-size: 26px;
+  font-family: Adelle, "Tablet Gothic", Frutiger, "Frutiger Linotype", Univers,
+    HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica,
+    Arial, "Lucida Grande", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.row > .input > input,
+input[type="password"i] {
+  text-align: start;
+  border: 2px solid #bac7d0;
+  font-size: 12px !important;
+  padding: 18px 5px !important;
+  font-size: 12px;
+  margin: 6.5px 0;
+  border-radius: 0;
+  background: #fff !important;
+  width: 100%;
+}
+.input {
+  width: 50%;
+  padding: 0 15px;
+}
+
+input[type="password"i] {
+    margin: 6.5px 15px;
+}
+::placeholder {
+    color: #00000088;
+    font-size: 11px;
+    font-weight: bolder;
+}
+.password {
+    color: #627684;
+    font-size: 14px;
+    line-height: 18px;
+    float: none;
+    font-weight: normal;
+    margin: 0 15px;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+}
+.password > .label {
+    float: left;
+    margin: 10px 0 5px;
+    font-weight: normal;
+}
+.progress{
+    min-width: 100%;
+    height: 8px;
+    background-color: #DDE5E7;
+    border: #DDE5E7 solid;
+    border-radius: 5px;
+    margin: 0px 0 5px 0;
+}
+.label > li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #627684;
+    padding: 5px 0;
+}
+.label > li >i{
+    cursor: default!important;
+    background: #a4bbc1;
+    color: #a4bbc1;
+    border-radius: 50%;
+}
+.label > li >i:hover{
+    color: #44525e;
+}
+.password > .label {
+    width: 100%;
+    text-align: start;
+}
+.password > .label > li{
+    width: 33%;
+    float: left;
+  }
+.check{
+    margin: 0 15px;
+    text-align: start;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 18px;
+    font-size: 15.8px;
+    color: #000;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+.check > div > small{
+    font-style: normal;
+    font-weight: normal;
+}
+.check > div {
+    margin: 20px 0;
+}
+input[type=checkbox]:hover {
+    cursor: pointer;
 }
 
-/* LEFT SIDE CSS */
+.signup {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    background-color: #eecf1e;
+    border: 0;
+    font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
-/* RIGHT SIDE CSS */
+.signup:hover {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    color: #fff;
+    background-color: #000;
+    border: 0;
+    font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
-/* RIGHT SIDE CSS */
+.google {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-family: Tablet Gothic, Frutiger, Frutiger Linotype, Univers, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.google:hover {
+    background: #4285F4 !important;
+    opacity: 0.7;
+}
+
+.line {
+    color:#bac7d0;
+    font-family: Tablet Gothic,Frutiger,Frutiger Linotype,Univers,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-style: normal;
+    font-size: 15.8px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #bac7d0;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.line>span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+/* END RIGHT SIDE CSS */
+
+/* HTML TAGES CSS */
+form {
+    margin: 20px 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*
+input {
+    border: 2px solid #bac7d0;
+    font-size: 0.75rem;
+    padding: 1.25rem 0.75rem;
+}
+
+input[type="password"i] {
+    width: 193%;
+} */
+/* END HTML TAGES CSS */
 
 /*
     .row {
@@ -340,28 +545,7 @@
         padding: 10px 20px;
     } */
 
-/* HTML TAGES */
-ul{
-    margin-top: 0;
-}
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-input {
-    border: 2px solid #bac7d0;
-    font-size: 0.75rem;
-    padding: 1.25rem 0.75rem;
-}
-
-input[type="password"i] {
-    width: 193%;
-}
-
 /* } */
-
 
 /*
 @media screen and (max-width:2560px) {
