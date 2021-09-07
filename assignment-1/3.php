@@ -1,24 +1,38 @@
 <?php
+  /*
+  Standards:
+      ->  Naming Conventions : * beDescriptive * (varName,fncName,clsName,flName) (SQL:*_UPPERCASE*)
+      ->  Case Types         : * camelCase     * (CONST:*_UPPERCASE*)
+      ->  Do Comments        : * Good & Bad    * (Snipppets:['/':'single comment','/*':'block comment'])
+      ->  Consistency        : * beConsistant  * (Comments,Code,Values)
+      ->  Indentation        : * TAB = 4space  *
+      ->  Readability        : * useSpaces     *
+      ->  Indentation        : * TAB = 4space  *
+  */
 
-/*
-3->Write string functions to compare two string :
-    1. Without case.
-    2. With case
+/* VinayGawade: 07-09-2021
+    ->3.Write string functions to compare two string :
+        1. Without case.
+        2. With case
 */
 
-class compare{
-    public function __construct($str_fst,$str_snd,$case=false){
-        if($case){
+class compareStrings{
 
-            echo (strcmp($str_fst,$str_snd)===0)? "{$str_fst} And {$str_snd} Both Are Equal.(CASE-SENSITIVE)\n":"{$str_fst} And {$str_snd} Both Are Not Equal.(CASE-SENSITIVE)\n";
+    public function __construct($firstString,$secondString,$case=false){ # ->2 parameters are required 1 is optional<-
 
-        }else{
+        if($case):
+            # ->Ternary operator used ((condition)? exp1 : exp2;)<-
+            echo (strcmp($firstString,$secondString) === 0) ? "{$firstString} And {$secondString} Both Are Equal.(CASE-SENSITIVE)\n":"{$firstString} And {$secondString} Both Are Not Equal.(CASE-SENSITIVE)\n";
+        else:
 
-            echo (strcasecmp($str_fst,$str_snd)===0)? "{$str_fst} And {$str_snd} Both Are Equal.(CASE-INSENSITIVE)\n":"{$str_fst} And {$str_snd} Both Are Not Equal.(CASE-INSENSITIVE)\n";
+            echo (strcasecmp($firstString,$secondString) === 0) ? "{$firstString} And {$secondString} Both Are Equal.(CASE-INSENSITIVE)\n":"{$firstString} And {$secondString} Both Are Not Equal.(CASE-INSENSITIVE)\n";
+        endif;
 
-        }
     }
+
 }
-new compare("Vinay Gawade","vinay gawade");  /* 3rd parameter $case is Options (Default=false) */
-new compare("Vinay Gawade","Vinay Gawade",true);
+
+$newObj1 = new compareStrings("Vinay Gawade","Vinay Gawade",true);
+$newObj2 = new compareStrings("Vinay Gawade","vinay gawade");  # ->3rd parameter $case is optional (Default=false)<-
+
 ?>
