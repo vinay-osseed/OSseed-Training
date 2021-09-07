@@ -32,7 +32,7 @@ class compareStrings{
 
 }
 
-$newObj1 = new compareStrings("Vinay Gawade","Vinay Gawade",true);
-$newObj2 = new compareStrings("Vinay Gawade","vinay gawade");  # ->3rd parameter $case is optional (Default=false)<-
+$newObj_1 = new compareStrings("Vinay Gawade","Vinay Gawade",true);
+$newObj_2 = new compareStrings("Vinay Gawade","vinay gawade");  # ->3rd parameter $case is optional (Default=false)<-
 
 ?>

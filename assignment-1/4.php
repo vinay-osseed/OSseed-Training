@@ -29,7 +29,7 @@ class keyCheck{
 
 $newArray=array('one' => 1,'two' => 2,'three' => 3,'four' => 4);
 
-new keyCheck($newArray,"four");  # ->pass array & key as parameter that you want to check<-
-new keyCheck($newArray,"five");
+$newObj_1 = new keyCheck($newArray,"four");  # ->pass array & key as parameter that you want to check<-
+$newObj_2 = new keyCheck($newArray,"five");
 
 ?>
