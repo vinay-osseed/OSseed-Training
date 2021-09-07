@@ -22,10 +22,10 @@ class compareStrings{
 
         if($case):
             # ->Ternary operator used ((condition)? exp1 : exp2;)<-
-            echo (strcmp($firstString,$secondString) === 0) ? "{$firstString} And {$secondString} Both Are Equal.(CASE-SENSITIVE)\n":"{$firstString} And {$secondString} Both Are Not Equal.(CASE-SENSITIVE)\n";
+            echo (strcmp($firstString,$secondString) === 0) ? "{$firstString} And {$secondString} Both Are Equal.(CASE-SENSITIVE)\n" : "{$firstString} And {$secondString} Both Are Not Equal.(CASE-SENSITIVE)\n";
         else:
 
-            echo (strcasecmp($firstString,$secondString) === 0) ? "{$firstString} And {$secondString} Both Are Equal.(CASE-INSENSITIVE)\n":"{$firstString} And {$secondString} Both Are Not Equal.(CASE-INSENSITIVE)\n";
+            echo (strcasecmp($firstString,$secondString) === 0) ? "{$firstString} And {$secondString} Both Are Equal.(CASE-INSENSITIVE)\n" : "{$firstString} And {$secondString} Both Are Not Equal.(CASE-INSENSITIVE)\n";
         endif;
 
     }
