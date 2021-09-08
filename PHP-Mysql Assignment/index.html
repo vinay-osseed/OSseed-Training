@@ -33,14 +33,15 @@
         <div class="text-dark fs-3">Sign-In Here</div>
       </div>
       <div class="card-body">
-        <form action="index.html" method="post">
+        <form action="./includes/do.php" method="post">
+          <input type="hidden" name="task" value="SignIn">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address :-</label>
-            <input type="email" inputmode="email" class="form-control" id="exampleInputEmail1">
+            <label for="userEmailId" class="form-label">Email address :-</label>
+            <input type="email" name="userEmailId" inputmode="email" class="form-control" id="userEmailId" required>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password :-</label>
-            <input type="password" inputmode="passsword" class="form-control" id="exampleInputPassword1">
+            <label for="userPassword" class="form-label">Password :-</label>
+            <input type="password" name="userPassword" inputmode="passsword" class="form-control" id="userPassword" required>
           </div>
           <div class="mt-4">
             <button type="submit" class="btn btn-lg btn-primary w-100">Submit</button>

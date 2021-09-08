@@ -34,26 +34,32 @@
         <div class="text-dark fs-3">Sign-Up Here</div>
       </div>
       <div class="card-body">
-        <form action="" method="post">
+        <form action="./includes/do.php" method="post">
+          <input type="hidden" name="task" value="SignUp">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address :-</label>
-            <input type="email" inputmode="email" class="form-control" id="exampleInputEmail1" aria-describedby="email">
-            <li id="email" class="form-text">We'll never share your email with anyone else.</li>
+            <label for="userFullName" class="form-label">Full Name :-</label>
+            <input type="text" name="userFullName" inputmode="text" class="form-control" id="userFullName" required>
+          </div>
+            <div class="mb-3">
+              <label for="userEmailId" class="form-label">Email address :-</label>
+              <input type="email" name="userEmailId" inputmode="email" class="form-control" id="userEmailId" aria-describedby="email" required>
+              <li id="email" class="form-text">We'll never share your email with anyone else.</li>
+            </div>
+          <div class="mb-3">
+            <label for="userPassword" class="form-label">Password :-</label>
+            <input type="password" name="userPassword" inputmode="passsword" class="form-control" id="userPassword" required>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password :-</label>
-            <input type="password" inputmode="passsword" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword2" class="form-label">Confirm Password :-</label>
-            <input type="password" inputmode="passsword" class="form-control" id="exampleInputPassword2">
+            <label for="userConfirmPassword" class="form-label">Confirm Password :-</label>
+            <input type="password" name="userConfirmPassword" inputmode="passsword" class="form-control" id="userConfirmPassword" required>
+            <div class="alert alert-light py-1" id='notice' role="alert"></div>
             <li id="email" class="form-text">At least 8 characters.</li>
             <li id="email" class="form-text">A mixture of both uppercase and lowercase letters.</li>
             <li id="email" class="form-text">A mixture of letters and numbers.</li>
             <li id="email" class="form-text">Inclusion of at least one special character.</li>
           </div>
-          <div class="mt-4">
-            <button type="submit" class="btn btn-lg btn-primary w-100">Submit</button>
+          <div class="mt-4" id="signup">
+            <button type="submit" id="submit" class="btn btn-lg btn-primary w-100">Submit</button>
           </div>
         </form>
       </div>
@@ -73,6 +79,7 @@
   </footer>
 
   <!-- Separate Popper and Bootstrap JS -->
+  <script src="./assets/js/valdation.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
