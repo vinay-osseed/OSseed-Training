@@ -48,8 +48,8 @@ class runQuery{
     return ($statement->rowCount() === 1) ? true : false;
   }
 
-  function updateNameQuery($tableName = 'users', $data){
-      $statement = dbConnect()->prepare("UPDATE {$tableName} SET userFullName = '{$data['userFullName']}' WHERE id = {$_COOKIE['signInUserId']};");
+  function updateNameAndEmailQuery($tableName = 'users', $data){
+      $statement = dbConnect()->prepare("UPDATE {$tableName} SET userFullName = '{$data['userFullName']}', userEmailId = '{$data['userEmailId']}' WHERE id = {$_COOKIE['signInUserId']};");
       $statement->execute();
     return ($statement->rowCount() > 0) ? true : false;
   }

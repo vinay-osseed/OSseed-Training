@@ -43,8 +43,8 @@ switch ($_POST['task']) {
   break;
 
   case 'UpdateName':
-    if($query->updateNameQuery('users',$_POST)):
-      echo "<script>alert('Account\'s Full Name Updated.');window.location='../dashboard.php';</script>";
+    if($query->updateNameAndEmailQuery('users',$_POST) && setcookie('signInUser', $_POST['userEmailId'], time() + 600, "/")):
+      echo "<script>alert('Account\'s Full Name & Email Updated.');window.location='../dashboard.php';</script>";
     else:
       echo "<script>alert('Invalid Input.');window.location='../dashboard.php';</script>";
     endif;

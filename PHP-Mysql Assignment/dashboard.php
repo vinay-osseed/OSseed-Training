@@ -102,7 +102,7 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
               </div>
               <div class="mb-3">
                 <label for="userEmailId" class="form-label">Your Email address :-</label>
-                <input type="email" inputmode="email" class="form-control" value="<?php echo $data[0]['userEmailId']; ?>" name="userEmailId" id="userEmailId" readonly>
+                <input type="email" inputmode="email" class="form-control" value="<?php echo $data[0]['userEmailId']; ?>" name="userEmailId" id="userEmailId" required>
               </div>
               <div class="mt-4">
                 <button type="submit" class="btn btn-lg btn-primary w-100">Save</button>
