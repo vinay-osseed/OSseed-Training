@@ -50,6 +50,23 @@ $(document).ready(function() {
         });
     });
 
+    $('#UpdatePasswordBtn').on('click',function(){
+      	$.ajax({
+      		url: "./includes/do.php",
+      		type: "POST",
+          data:$("#UpdatePasswordForm").serialize(),
+      		cache: false,
+      		success: function(dataResult){
+            if (getMsg(dataResult)=='Account Password Updated.') {
+              alert(getMsg(dataResult));
+              window.location=getRedirectPath(dataResult);
+            }else{
+              alert(getMsg(dataResult));
+            }
+      		}
+        });
+    });
+
 });
 
 function getMsg(msg) {

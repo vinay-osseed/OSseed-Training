@@ -8,13 +8,13 @@ function checkPasswordMatch() {
         $("#notice").addClass("alert-danger");
         $("#notice").text("Passwords Not Match.");
         $('#signup').find('#signUpBtn').prop('disabled', true);
-        $('#dashboard').find(':input[type="submit"]').prop('disabled', true);
+        $('#dashboard').find(':button[type="button"]').prop('disabled', true);
       }else {
         $("#notice").removeClass("alert-danger");
         $("#notice").addClass("alert-light");
         $("#notice").empty();
         $('#signup').find('#signUpBtn').prop('disabled', false);
-        $('#dashboard').find(':input[type="submit"]').prop('disabled', false);
+        $('#dashboard').find(':button[type="button"]').prop('disabled', false);
       }
 }
 
@@ -26,14 +26,14 @@ function validEmailId(){
           $("#emailNotice").text("Enter Valid Email Id.");
           $('#signin').find('#signInBtn').prop('disabled', true);
           $('#signup').find('#signUpBtn').prop('disabled', true);
-          $('#dashboard').find(':input[type="submit"]').prop('disabled', true);
+          $('#dashboardEmail').find('#submitNameEmailBtn').prop('disabled', true);
         }else {
           $("#emailNotice").removeClass("alert-danger");
           $("#emailNotice").addClass("alert-light");
           $("#emailNotice").empty();
           $('#signin').find('#signInBtn').prop('disabled', false);
           $('#signup').find('#signUpBtn').prop('disabled', false);
-          $('#dashboard').find(':input[type="submit"]').prop('disabled', false);
+          $('#dashboardEmail').find('#submitNameEmailBtn').prop('disabled', false);
         }
 }
 

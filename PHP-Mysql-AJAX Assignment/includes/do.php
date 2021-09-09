@@ -70,21 +70,20 @@ switch ($_POST['task']) {
   // break;
 
 # ->if request for UpdatePassworde<-
-  // case 'UpdatePassword':
-  //
-  //   if($query->updatePasswordQuery('users',$_POST)):
-  //
-  //     // echo "<script>alert('Account\'s Password Updated.');window.location='../dashboard.php';</script>";
-  //   else:
-  //
-  //     // echo "<script>alert('Wrong Current Password.');window.location='../dashboard.php';</script>";
-  //   endif;
-  //
-  // break;
+  case 'UpdatePassword':
+
+    if($query->updatePasswordQuery('users',$_POST)):
+
+      echo json_encode(['redirect'=>'./dashboard.php','msg'=>'Account Password Updated.']);
+    else:
+
+      echo json_encode(['redirect'=>'./dashboard.php','msg'=>'Wrong Current Password.']);
+    endif;
+
+  break;
 
   default:
-
 # ->if none of above request happens<-
-    // echo "<script>alert('Invalid Request Please Try Again.');window.location='../';</script>";
+    echo json_encode(['redirect'=>'./','msg'=>'Invalid Request Please Try Again.']);
   break;
 }
