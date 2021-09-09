@@ -1,3 +1,4 @@
+/* VinayGawade: 09-09-2021 ->Script for Passwords match.<- */
 function checkPasswordMatch() {
     var password = $("#userPassword").val();
     var confirmPassword = $("#userConfirmPassword").val();
