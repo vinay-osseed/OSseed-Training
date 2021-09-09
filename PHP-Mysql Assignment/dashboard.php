@@ -1,4 +1,5 @@
 <?php
+/* VinayGawade: 09-09-2021 ->check that cookie set or not<- */
 if(!isset($_COOKIE['signInUser'])):
   header( "Location:./ " );
 endif;
@@ -6,9 +7,12 @@ endif;
 include './includes/helper.php';
 
 $query = new runQuery();
+# ->fetch signed in users data from database<-
 $data = $query->selectAllQuery('users','id, userFullName, userEmailId',$_COOKIE['signInUser']);
+# ->set current user;s id in cookie<-
 setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
-?>
+
+  <link rel="icon" href="./assets/img/favicon.ico" sizes="any" type="image/icon">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +27,7 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
   <meta name="robots" content="index,follow">
 
   <!-- Title &  Icon -->
-  <link rel="icon" href="favicon." sizes="any" type="image/">
+  <link rel="icon" href="./assets/img/favicon.ico" sizes="any" type="image/icon">
   <title>Dashboard Page</title>
 
   <!-- Bootstrap CSS JS JQuery -->
@@ -113,7 +117,6 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
         </div>
           </div>
           <div class="col-md-12">
-
           <div class="card p-0 my-3">
           <div class="card-header text-center">
             <div class="text-dark fs-3">Your Logs Here</div>
@@ -128,6 +131,7 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
     </tr>
   </thead>
   <tbody>
+  <!-- Loop over the userLogs Table using select query method -->
     <?php $i=1;foreach($query->selectAllQuery('userLogs','*',$_COOKIE['signInUser']) as $row){ ?>
     <tr></tr>
       <th scope="row"><?php echo $i++; ?></th>
@@ -135,6 +139,7 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
       <td><?php echo $row['loggedUserTimeStamp'];?></td>
     </tr>
     <?php } ?>
+    <!-- End Loop -->
     <tr>
   </tbody>
 </table>
