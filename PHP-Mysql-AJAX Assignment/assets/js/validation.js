@@ -4,6 +4,7 @@ function checkPasswordMatch() {
     var confirmPassword = $("#userConfirmPassword").val();
 
     if (password != confirmPassword){
+      // ->if passwords not mathed sho warning<-
         $("#notice").removeClass("alert-light");
         $("#notice").addClass("alert-danger");
         $("#notice").text("Passwords Not Match.");
@@ -19,25 +20,30 @@ function checkPasswordMatch() {
 }
 
 function validEmailId(){
-  var regex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,3})?$/;
+  var regex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,3})?$/; // ->REGEX for validate Email Id<-
+
       if (!regex.test($("#userEmailId").val())){
+
+        // ->if REGEX not matched then show warning<-
           $("#emailNotice").removeClass("alert-light");
           $("#emailNotice").addClass("alert-danger");
           $("#emailNotice").text("Enter Valid Email Id.");
           $('#signin').find('#signInBtn').prop('disabled', true);
           $('#signup').find('#signUpBtn').prop('disabled', true);
-          $('#dashboardEmail').find('#submitNameEmailBtn').prop('disabled', true);
+          $('#dashboardEmail').find('#updateNameEmailBtn').prop('disabled', true);
         }else {
           $("#emailNotice").removeClass("alert-danger");
           $("#emailNotice").addClass("alert-light");
           $("#emailNotice").empty();
           $('#signin').find('#signInBtn').prop('disabled', false);
           $('#signup').find('#signUpBtn').prop('disabled', false);
-          $('#dashboardEmail').find('#submitNameEmailBtn').prop('disabled', false);
+          $('#dashboardEmail').find('#updateNameEmailBtn').prop('disabled', false);
         }
 }
 
 $(document).ready(function () {
+  
+  // ->checking validation while typing <-
   $("#userConfirmPassword").keyup(checkPasswordMatch);
   $("#userEmailId").keyup(validEmailId);
 });

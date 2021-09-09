@@ -57,19 +57,19 @@ switch ($_POST['task']) {
   break;
 
 # ->if request for Update Name & Email<-
-  // case 'UpdateName':
-  //
-  //   if($query->updateNameAndEmailQuery('users',$_POST) && setcookie('signInUser', $_POST['userEmailId'], time() + 600, "/")):
-  //
-  //     // echo "<script>alert('Account\'s Full Name & Email Updated.');window.location='../dashboard.php';</script>";
-  //   else:
-  //
-  //     // echo "<script>alert('Invalid Input.');window.location='../dashboard.php';</script>";
-  //   endif;
-  //
-  // break;
+  case 'UpdateNameEmail':
 
-# ->if request for UpdatePassworde<-
+    if($query->updateNameAndEmailQuery('users',$_POST) && setcookie('signInUser', $_POST['userEmailId'], time() + 600, "/")):
+
+      echo json_encode(['redirect'=>'./dashboard.php','msg'=>'Account Full Name & Email Updated.']);
+    else:
+
+      echo json_encode(['redirect'=>'./dashboard.php','msg'=>'Cannot Update Right Now']);
+    endif;
+
+  break;
+
+# ->if request for Update Passworde<-
   case 'UpdatePassword':
 
     if($query->updatePasswordQuery('users',$_POST)):

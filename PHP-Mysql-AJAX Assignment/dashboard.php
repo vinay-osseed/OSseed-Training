@@ -11,8 +11,9 @@ $query = new runQuery();
 $data = $query->selectAllQuery('users','id, userFullName, userEmailId',$_COOKIE['signInUser']);
 # ->set current user;s id in cookie<-
 setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
+
 ?>
-  <link rel="icon" href="./assets/img/favicon.ico" sizes="any" type="image/icon">
+<link rel="icon" href="./assets/img/favicon.ico" sizes="any" type="image/icon">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,8 +32,7 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
   <title>Dashboard Page</title>
 
   <!-- Bootstrap CSS JS JQuery -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
@@ -42,7 +42,7 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
     <div class="navbar-brand text-white fs-2">Dashboard <span class="text-small fs-6">(AJAX Version)</span></div>
     <div class="justify-content-end">
       <form id="signOutForm" method="post">
-      <span class="text-white">Hi <?php echo explode("@",$_COOKIE['signInUser'])[0];?></span>
+        <span class="text-white">Hi <?php echo explode("@",$_COOKIE['signInUser'])[0];?></span>
         <input type="hidden" name="task" value="SignOut">
         <button type="button" id="signOutBtn" class="btn btn-light" href="./index.html">Sign-Out</button>
       </form>
@@ -52,32 +52,29 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
   <section class="container-fluid m-0 p-3">
     <div class="row">
 
-    <div class="col-md-6">
+      <div class="col-md-6">
         <div class="card p-0 my-3">
           <div class="card-header text-center">
             <div class="text-dark fs-3">Change Password Here</div>
           </div>
           <div class="card-body">
             <form id="UpdatePasswordForm" method="post">
-          <input type="hidden" name="task" value="UpdatePassword">
+              <input type="hidden" name="task" value="UpdatePassword">
               <div class="mb-3">
                 <label for="currentPassword" class="form-label">Your Current Password :-</label>
-                <input type="password" inputmode="passsword" class="form-control" name="currentPassword"
-                  id="currentPassword" required>
+                <input type="password" inputmode="passsword" class="form-control" name="currentPassword" id="currentPassword" required>
               </div>
               <div class="mb-3">
                 <label for="newPassword" class="form-label">Your new Password :-</label>
-                <input type="password" inputmode="passsword" class="form-control" name="newPassword" id="userPassword"
-                  required>
+                <input type="password" inputmode="passsword" class="form-control" name="newPassword" id="userPassword" required>
               </div>
               <div class="mb-3">
                 <label for="newConfirmPassword" class="form-label">Confirm New Password :-</label>
-                <input type="password" inputmode="passsword" class="form-control" name="newConfirmPassword"
-                  id="userConfirmPassword" required>
+                <input type="password" inputmode="passsword" class="form-control" name="newConfirmPassword" id="userConfirmPassword" required>
                 <div class="alert alert-light py-0 mb-0 mt-3" id='notice' role="alert"></div>
               </div>
               <div class="mt-4" id="dashboard">
-                <button  type="button" id="UpdatePasswordBtn" class="btn btn-lg btn-primary w-100">Save</button>
+                <button type="button" id="UpdatePasswordBtn" class="btn btn-lg btn-primary w-100">Save</button>
               </div>
             </form>
           </div>
@@ -88,60 +85,59 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
         <div class="row">
           <div class="col-md-12">
 
-          <div class="card p-0 my-3">
-          <div class="card-header text-center">
-            <div class="text-dark fs-3">Your Details Here</div>
-          </div>
-          <div class="card-body">
-            <form action="./includes/do.php" method="post">
-          <input type="hidden" name="task" value="UpdateName">
-              <div class="mb-3">
-                <label for="userFullName" class="form-label">Your Name :-</label>
-                <input type="text" inputmode="text" class="form-control" value="<?php echo $data[0]['userFullName']; ?>" name="userFullName" id="userFullName"
-                  required>
+            <div class="card p-0 my-3">
+              <div class="card-header text-center">
+                <div class="text-dark fs-3">Your Details Here</div>
               </div>
-              <div class="mb-3">
-                <label for="userEmailId" class="form-label">Your Email address :-</label>
-                <input type="email" inputmode="email" class="form-control" value="<?php echo $data[0]['userEmailId']; ?>" name="userEmailId" id="userEmailId" required>
-                <div class="alert alert-light py-0 mb-0 mt-3" id='emailNotice' role="alert"></div>
+              <div class="card-body">
+                <form id="UpdateNameEmailForm" method="post">
+                  <input type="hidden" name="task" value="UpdateNameEmail">
+                  <div class="mb-3">
+                    <label for="userFullName" class="form-label">Your Name :-</label>
+                    <input type="text" inputmode="text" class="form-control" value="<?php echo $data[0]['userFullName']; ?>" name="userFullName" id="userFullName" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="userEmailId" class="form-label">Your Email address :-</label>
+                    <input type="email" inputmode="email" class="form-control" value="<?php echo $data[0]['userEmailId']; ?>" name="userEmailId" id="userEmailId" required>
+                    <div class="alert alert-light py-0 mb-0 mt-3" id='emailNotice' role="alert"></div>
+                  </div>
+                  <div class="mt-4" id="dashboardEmail">
+                    <button type="button" id="updateNameEmailBtn" class="btn btn-lg btn-primary w-100">Save</button>
+                  </div>
+                </form>
               </div>
-              <div class="mt-4" id="dashboardEmail">
-                <button type="button" id="submitNameEmailBtn" class="btn btn-lg btn-primary w-100">Save</button>
-              </div>
-            </form>
-          </div>
 
-        </div>
+            </div>
           </div>
           <div class="col-md-12">
-          <div class="card p-0 my-3">
-          <div class="card-header text-center">
-            <div class="text-dark fs-3">Your Logs Here</div>
-          </div>
-          <div class="card-body">
-            <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Sr.No</th>
-      <th scope="col">Status</th>
-      <th scope="col">Timestamp</th>
-    </tr>
-  </thead>
-  <tbody>
-  <!-- Loop over the userLogs Table using select query method -->
-    <?php $i=1;foreach($query->selectAllQuery('userLogs','*',$_COOKIE['signInUser']) as $row){ ?>
-    <tr></tr>
-      <th scope="row"><?php echo $i++; ?></th>
-      <td><?php echo $row['userStatus'];?></td>
-      <td><?php echo $row['loggedUserTimeStamp'];?></td>
-    </tr>
-    <?php } ?>
-    <!-- End Loop -->
-    <tr>
-  </tbody>
-</table>
-          </div>
-        </div>
+            <div class="card p-0 my-3">
+              <div class="card-header text-center">
+                <div class="text-dark fs-3">Your Logs Here</div>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Sr.No</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Timestamp</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Loop over the userLogs Table using select query method -->
+                    <?php $i=1;foreach($query->selectAllQuery('userLogs','*',$_COOKIE['signInUser']) as $row){ ?>
+                    <tr></tr>
+                    <th scope="row"><?php echo $i++; ?></th>
+                    <td><?php echo $row['userStatus'];?></td>
+                    <td><?php echo $row['loggedUserTimeStamp'];?></td>
+                    </tr>
+                    <?php } ?>
+                    <!-- End Loop -->
+                    <tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -161,12 +157,8 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
   <!-- Separate Popper and Bootstrap JS -->
   <script src="./assets/js/ajax.js" charset="utf-8"></script>
   <script src="./assets/js/validation.js" charset="utf-8"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
 </body>
 
