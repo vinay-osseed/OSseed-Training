@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 09, 2021 at 04:02 AM
+-- Generation Time: Sep 09, 2021 at 10:42 PM
 -- Server version: 8.0.26-0ubuntu0.20.04.2
 -- PHP Version: 7.4.23
 
@@ -54,8 +54,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `userFullName`, `userEmailId`, `userPassword`, `userCreatedOn`) VALUES
-(14, 'admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', '2021-09-08 16:30:17'),
-(22, 'Vinay Ajay Gawade', 'vinulike11@gmail.com', '55e03076acdacc8d79444b42c5882fa5', '2021-09-08 21:52:59');
+(14, 'admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', '2021-09-08 16:30:17');
 
 --
 -- Indexes for dumped tables
@@ -81,13 +80,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `userLogs`
 --
 ALTER TABLE `userLogs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
