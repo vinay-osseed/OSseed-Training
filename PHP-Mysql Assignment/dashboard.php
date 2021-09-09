@@ -11,7 +11,7 @@ $query = new runQuery();
 $data = $query->selectAllQuery('users','id, userFullName, userEmailId',$_COOKIE['signInUser']);
 # ->set current user;s id in cookie<-
 setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
-
+?>
   <link rel="icon" href="./assets/img/favicon.ico" sizes="any" type="image/icon">
 <!DOCTYPE html>
 <html lang="en">
