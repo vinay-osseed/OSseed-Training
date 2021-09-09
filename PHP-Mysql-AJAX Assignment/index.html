@@ -6,76 +6,64 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="System's Sign up page where you can create your own account and visit profile dashboard.">
+  <meta name="description" content="System's Sign in where you can enter your credentials and visit profile dashboard.">
   <meta name="keywords" content="login,signup,user,email,profile,password">
   <meta name="author" content="Vinay-Gawade">
   <meta name="robots" content="index,follow">
 
   <!-- Title &  Icon -->
   <link rel="icon" href="./assets/img/favicon.ico" sizes="any" type="image/icon">
-  <title>Sign Up Page</title>
+  <title>Sign In Page</title>
 
   <!-- Bootstrap CSS JS JQuery -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 
 <body>
   <nav class="container-fluid navbar d-flex bg-primary ">
-    <div class="navbar-brand text-white fs-2">Sign-Up Page</div>
+    <div class="navbar-brand text-white fs-2">Sign-In Page <span class="text-small fs-6">(AJAX Version)</span></div>
     <div class="justify-content-end">
-      <a class="btn btn-light" href="./index.html">Sign-In</a>
+      <a class="btn btn-light" href="./signup.html">Sign-Up</a>
     </div>
   </nav>
   <section class="row m-5">
     <div class="card col-lg-6 col-xsm-12 mx-auto p-0">
       <div class="card-header text-center">
-        <div class="text-dark fs-3">Sign-Up Here</div>
+        <div class="text-dark fs-3">Sign-In Here</div>
       </div>
       <div class="card-body">
-        <form action="./includes/do.php" method="post">
-          <input type="hidden" name="task" value="SignUp">
+        <form id="signInForm" method="post">
+          <input type="hidden" name="task" id="task" value="SignIn">
           <div class="mb-3">
-            <label for="userFullName" class="form-label">Full Name :-</label>
-            <input type="text" name="userFullName" inputmode="text" class="form-control" id="userFullName" required>
+            <label for="userEmailId" class="form-label">Email address :-</label>
+            <input type="email" name="userEmailId" inputmode="email" class="form-control" id="userEmailId" required>
+            <div class="alert alert-light py-0 mb-0 mt-3" id='emailNotice' role="alert"></div>
           </div>
-            <div class="mb-3">
-              <label for="userEmailId" class="form-label">Email address :-</label>
-              <input type="email" name="userEmailId" inputmode="email" class="form-control" id="userEmailId" aria-describedby="email" required>
-              <li id="email" class="form-text">We'll never share your email with anyone else.</li>
-            </div>
           <div class="mb-3">
             <label for="userPassword" class="form-label">Password :-</label>
             <input type="password" name="userPassword" inputmode="passsword" class="form-control" id="userPassword" required>
           </div>
-          <div class="mb-3">
-            <label for="userConfirmPassword" class="form-label">Confirm Password :-</label>
-            <input type="password" name="userConfirmPassword" inputmode="passsword" class="form-control" id="userConfirmPassword" required>
-            <div class="alert py-0 mb-0 mt-3 alert-danger" id='notice' role="alert"></div>
-          </div>
-          <div class="mt-4" id="signup">
-            <button type="submit" id="submit" class="btn btn-lg btn-primary w-100">Submit</button>
+          <div class="mt-4" id="signin">
+            <button type="button" id="signInBtn" class="btn btn-lg btn-primary w-100">Sign In</button>
           </div>
         </form>
       </div>
       <div class="card-footer text-center">
-        <a href="./index.html">Already Have Account ?</a>
+        <a class="" href="">Forgot Password ?</a>
       </div>
     </div>
   </section>
-
-    <footer class="bg-dark text-center text-white">
+  <footer class="text-center text-white p-3 fixed-bottom bg-dark text-center text-white mt-auto mb-0">
     <!-- Copyright -->
-    <div class="text-center text-white p-3 m-0">
-      © 2021 Copyright :-
-      <a class="text-white" href="https://mdbootstrap.com/">something.com</a>
-    </div>
+    © 2021 Copyright :-
+    <a class="text-white" href="https://something.com/">something.com</a>
     <!-- Copyright -->
   </footer>
 
   <!-- Separate Popper and Bootstrap JS -->
-  <script src="./assets/js/valdation.js" charset="utf-8"></script>
+  <script src="./assets/js/ajax.js" charset="utf-8"></script>
+  <script src="./assets/js/validation.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 

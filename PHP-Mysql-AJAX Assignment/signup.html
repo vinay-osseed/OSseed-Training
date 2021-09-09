@@ -22,8 +22,8 @@
 </head>
 
 <body>
-  <nav class="container-fluid navbar d-flex bg-primary ">
-    <div class="navbar-brand text-white fs-2">Sign-Up Page</div>
+  <nav class="container-fluid navbar d-flex bg-primary">
+    <div class="navbar-brand text-white fs-2">Sign-Up Page <span class="text-small fs-6">(AJAX Version)</span></div>
     <div class="justify-content-end">
       <a class="btn btn-light" href="./index.html">Sign-In</a>
     </div>
@@ -34,7 +34,7 @@
         <div class="text-dark fs-3">Sign-Up Here</div>
       </div>
       <div class="card-body">
-        <form action="./includes/do.php" method="post">
+        <form id="signUpForm" method="post">
           <input type="hidden" name="task" value="SignUp">
           <div class="mb-3">
             <label for="userFullName" class="form-label">Full Name :-</label>
@@ -45,6 +45,7 @@
               <input type="email" name="userEmailId" inputmode="email" class="form-control" id="userEmailId" aria-describedby="email" required>
               <li id="email" class="form-text">We'll never share your email with anyone else.</li>
             </div>
+            <div class="alert alert-light py-0 mb-0" id='emailNotice' role="alert"></div>
           <div class="mb-3">
             <label for="userPassword" class="form-label">Password :-</label>
             <input type="password" name="userPassword" inputmode="passsword" class="form-control" id="userPassword" required>
@@ -52,10 +53,10 @@
           <div class="mb-3">
             <label for="userConfirmPassword" class="form-label">Confirm Password :-</label>
             <input type="password" name="userConfirmPassword" inputmode="passsword" class="form-control" id="userConfirmPassword" required>
-            <div class="alert py-0 mb-0 mt-3 alert-danger" id='notice' role="alert"></div>
+            <div class="alert alert-light py-0 mb-0 mt-3" id='notice' role="alert"></div>
           </div>
           <div class="mt-4" id="signup">
-            <button type="submit" id="submit" class="btn btn-lg btn-primary w-100">Submit</button>
+            <button type="button"  id="signUpBtn" class="btn btn-lg btn-primary w-100">Submit</button>
           </div>
         </form>
       </div>
@@ -75,7 +76,8 @@
   </footer>
 
   <!-- Separate Popper and Bootstrap JS -->
-  <script src="./assets/js/valdation.js" charset="utf-8"></script>
+  <script src="./assets/js/ajax.js" charset="utf-8"></script>
+  <script src="./assets/js/validation.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 

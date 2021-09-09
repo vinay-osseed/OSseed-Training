@@ -39,12 +39,12 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
 
 <body>
   <nav class="container-fluid navbar d-flex bg-primary align-items-baseline">
-    <div class="navbar-brand text-white fs-2">Dashboard</div>
+    <div class="navbar-brand text-white fs-2">Dashboard <span class="text-small fs-6">(AJAX Version)</span></div>
     <div class="justify-content-end">
-      <form action="./includes/do.php" method="post">
+      <form id="signOutForm" method="post">
       <span class="text-white">Hi <?php echo explode("@",$_COOKIE['signInUser'])[0];?></span>
         <input type="hidden" name="task" value="SignOut">
-        <button type="submit" class="btn btn-light" href="./index.html">Sign-Out</button>
+        <button type="button" id="signOutBtn" class="btn btn-light" href="./index.html">Sign-Out</button>
       </form>
     </div>
   </nav>
@@ -102,7 +102,7 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
               </div>
               <div class="mb-3">
                 <label for="userEmailId" class="form-label">Your Email address :-</label>
-                <input type="email" inputmode="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" class="form-control" value="<?php echo $data[0]['userEmailId']; ?>" name="userEmailId" id="userEmailId" required>
+                <input type="email" inputmode="email" class="form-control" value="<?php echo $data[0]['userEmailId']; ?>" name="userEmailId" id="userEmailId" required>
               </div>
               <div class="mt-4">
                 <button type="submit" class="btn btn-lg btn-primary w-100">Save</button>
@@ -158,7 +158,8 @@ setcookie('signInUserId', $data[0]['id'], time() + 600, "/");
   </footer>
 
   <!-- Separate Popper and Bootstrap JS -->
-  <script src="./assets/js/valdation.js" charset="utf-8"></script>
+  <script src="./assets/js/ajax.js" charset="utf-8"></script>
+  <script src="./assets/js/validation.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
     crossorigin="anonymous"></script>
