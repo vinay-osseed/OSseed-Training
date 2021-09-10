@@ -1,5 +1,5 @@
-# OSseed-Training
+# OSseed-Training (Software Engineer Trainee))
 
-## Default Login For PHP-Mysql Assignment :- 
+## Default Login For PHP-Mysql Assignment :-
 > - **email:** *admin@admin.com*  
 > - **password:** *admin*
